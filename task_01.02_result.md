@@ -2,7 +2,7 @@
 ## Failures
 
 ```
-nodes = [<riotctrl.ctrl.RIOTCtrl object at 0x7f8a2b29a250>], log_nodes = True, riotbase = '/home/mlenders/Repositories/RIOT-OS/RIOT'
+nodes = [<riotctrl.ctrl.RIOTCtrl object at 0x7f989ccc4220>], log_nodes = True, riotbase = '/home/mlenders/Repositories/RIOT-OS/RIOT'
 
     @pytest.mark.parametrize('nodes',
                              [pytest.param(['native'])],
@@ -14,14 +14,14 @@ nodes = [<riotctrl.ctrl.RIOTCtrl object at 0x7f8a2b29a250>], log_nodes = True, r
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 01-ci/test_spec01.py:19: in run_unittests
     node.make_run(
-.tox/test/lib/python3.9/site-packages/riotctrl/ctrl.py:178: in make_run
+.tox/test/lib/python3.8/site-packages/riotctrl/ctrl.py:178: in make_run
     return subprocess.run(command, env=self.env, *runargs, **runkwargs)
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
 input = None, capture_output = False, timeout = None, check = True
 popenargs = (['make', '--no-print-directory', '-C', '/home/mlenders/Repositories/RIOT-OS/RIOT/tests/unittests', 'all', 'flash-only', ...],)
-kwargs = {'env': {'BOARD': 'native', 'GITHUB_REPOSITORY': 'RIOT-OS/RIOT', 'GITHUB_RUN_ID': '1000935544', 'GITHUB_SERVER_URL': 'https://github.com', ...}, 'stderr': None, 'stdout': None}
-process = <Popen: returncode: 2 args: ['make', '--no-print-directory', '-C', '/home/ml...>, stdout = None, stderr = None, retcode = 2
+kwargs = {'env': {'BOARD': 'native', 'GITHUB_REPOSITORY': 'RIOT-OS/RIOT', 'GITHUB_RUN_ID': '1000935543', 'GITHUB_SERVER_URL': 'https://github.com', ...}, 'stderr': None, 'stdout': None}
+process = <subprocess.Popen object at 0x7f989ccc41c0>, stdout = None, stderr = None, retcode = 2
 
     def run(*popenargs,
             input=None, capture_output=False, timeout=None, check=False, **kwargs):
@@ -91,7 +91,7 @@ process = <Popen: returncode: 2 args: ['make', '--no-print-directory', '-C', '/h
                                          output=stdout, stderr=stderr)
 E               subprocess.CalledProcessError: Command '['make', '--no-print-directory', '-C', '/home/mlenders/Repositories/RIOT-OS/RIOT/tests/unittests', 'all', 'flash-only', 'test']' returned non-zero exit status 2.
 
-/usr/lib/python3.9/subprocess.py:528: CalledProcessError
+../../../.pyenv/versions/3.8.10/lib/python3.8/subprocess.py:516: CalledProcessError
 ```
 
 ## Captured stdout call
