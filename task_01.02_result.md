@@ -2,7 +2,7 @@
 ## Failures
 
 ```
-nodes = [<riotctrl.ctrl.RIOTCtrl object at 0x7f5dd09d8c10>], log_nodes = True, riotbase = '/home/mlenders/Repositories/RIOT-OS/RIOT'
+nodes = [<riotctrl.ctrl.RIOTCtrl object at 0x7fca1caf5f10>], log_nodes = True, riotbase = '/home/mlenders/Repositories/RIOT-OS/RIOT'
 
     @pytest.mark.parametrize('nodes',
                              [pytest.param(['native'])],
@@ -20,7 +20,7 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
 input = None, capture_output = False, timeout = None, check = True
 popenargs = (['make', '--no-print-directory', '-C', '/home/mlenders/Repositories/RIOT-OS/RIOT/tests/unittests', 'all', 'flash-only', ...],)
-kwargs = {'env': {'BOARD': 'native', 'HOME': '/home/mlenders', 'LANG': 'en_US.UTF-8', 'PATH': '/home/mlenders/Repositories/RIOT.../usr/bin/core_perl:/home/mlenders/.local/bin:/home/mlenders/.gem/ruby/2.7.0/bin', ...}, 'stderr': None, 'stdout': None}
+kwargs = {'env': {'BOARD': 'native', 'GITHUB_REPOSITORY': 'RIOT-OS/RIOT', 'GITHUB_RUN_ID': '1000935543', 'GITHUB_SERVER_URL': 'https://github.com', ...}, 'stderr': None, 'stdout': None}
 process = <Popen: returncode: 2 args: ['make', '--no-print-directory', '-C', '/home/ml...>, stdout = None, stderr = None, retcode = 2
 
     def run(*popenargs,
