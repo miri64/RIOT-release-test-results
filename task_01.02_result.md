@@ -2,7 +2,7 @@
 ## Failures
 
 ```
-nodes = [<riotctrl.ctrl.RIOTCtrl object at 0x7fca1caf5f10>], log_nodes = True, riotbase = '/home/mlenders/Repositories/RIOT-OS/RIOT'
+nodes = [<riotctrl.ctrl.RIOTCtrl object at 0x7f44d3cdae50>], log_nodes = True, riotbase = '/home/mlenders/Repositories/RIOT-OS/RIOT'
 
     @pytest.mark.parametrize('nodes',
                              [pytest.param(['native'])],
